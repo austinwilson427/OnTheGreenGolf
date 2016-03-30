@@ -1,0 +1,118 @@
+﻿<h1>Register</h1>
+
+<fieldset>
+    <legend>Register with a Social Provider</legend>
+    <ul>
+        <li ng-repeat="externalLogin in account.externalLogins">
+            <a target="_self" href="{{externalLogin.url}}">{{externalLogin.name}}</a>
+        </li>
+    </ul>
+
+</fieldset>
+<fieldset>
+    <legend>Local Registration</legend>
+    <ul>
+        <li ng-repeat="message in controller.validationMessages">
+            {{message}}
+        </li>
+    </ul>
+</fieldset>
+<div class="row">
+    <div class="col-md-4 col-md-offset-4">
+        <form ng-show="vm.firstPage && !vm.secondPage" ng-submit="vm.nextPage(1)" class="form-group">
+            <div class="register_field">
+                <label>Enter Username:</label>
+                <input type="text" class="form-control" ng-model="vm.registerUser.userName" placeholder="Enter Username" required>
+            </div>
+            <div class="register_field">
+                <label>Enter Email:</label>
+                <input type="email" class="form-control" ng-model="vm.registerUser.email" placeholder="Enter Email">
+            </div>
+            <div class="register_field">
+                <label>Password:</label>
+                <input type="password" class="form-control" ng-model="vm.registerUser.password" />
+            </div>
+            <div class="register_field">
+                <label>Confirm Password:</label>
+                <input type="password" class="form-control" ng-model="vm.registerUser.confirmPassword" />
+            </div>
+            <div class="register_field">
+                <label>Enter First Name:</label>
+                <input type="text" class="form-control" ng-model="vm.registerUser.firstName" placeholder="Enter First Name" required>
+            </div>
+            <div class="register_field">
+                <label>Enter Last Name:</label>
+                <input type="text" class="form-control" ng-model="vm.registerUser.lastName" placeholder="Your Last Name" required>
+            </div>
+            <div class="register_field">
+                <label>Enter City:</label>
+                <input type="text" class="form-control" ng-model="vm.registerUser.city" placeholder="City" required>
+            </div>
+            <div class="register_field">
+                <label>Select State:</label>
+                <select class="form-control" ng-model="vm.registerUser.state">
+                    <option ng-repeat="state in vm.stateList">{{state}}</option>
+                </select>
+            </div>
+            <div class="register_field">
+                <label>Enter Zip:</label>
+                <input type="text" class="form-control" ng-model="vm.registerUser.zip" placeholder="Zip" required>
+            </div>
+            <div class="register_field">
+                <label>Select Sex:</label>
+                <select class="form-control" ng-model="vm.registerUser.sex">
+                    <option>Male</option>
+                    <option>Female</option>
+                </select>
+            </div>
+            <div class="register_field">
+                <label>Enter or Select Birthday:</label>
+                <input class="form-control" type="date" ng-model="vm.registerUser.birthday" />
+            </div>
+            <br />
+            <div class="register_field">
+                <input class="form-control btn btn-primary" type="submit" value="Next" />
+            </div>
+        </form>
+        <form ng-show="!vm.firstPage && vm.secondPage" ng-submit="vm.nextPage(2)">
+            <div class="register_field">
+                <label>Select Your Home Course:</label>
+                <select class="form-control" ng-model="vm.registerUser.homeCourse">
+                    <option ng-repeat="course in vm.courseList">{{course.courseName}}</option>
+                </select>
+            </div>
+            <div class="register_field">
+                <label>Enter Handicap:</label>
+                <input type="text" class="form-control" ng-model="vm.registerUser.handicap" placeholder="Handicap" required>
+            </div>
+            <div class="register_field">
+                <label>Enter Driving Distance:</label>
+                <input type="number" class="form-control" ng-model="vm.registerUser.drivingDistance" placeholder="Driving Distance (yds)" required>
+            </div>
+            <br />
+            <div class="register_field">
+                <input class="form-control btn btn-primary" type="submit" value="Next" />
+            </div>
+        </form>
+        <form ng-show="!vm.firstPage && !vm.secondPage" ng-submit="vm.register()">
+            <div class="register_field">
+                <label>Upload Pic:</label>
+                <input href="#" ng-click="vm.pickFile()" ng-show="!vm.picLoaded" value="Upload Pic"/>
+            </div>
+            <div ng-show="vm.picLoaded">
+                <h4>Your pic has been loaded. Please finalize registration by clicking register button below.</h4>
+            </div>
+            <div ng-show="vm.picLoaded" class="register_field">
+                <button type="submit" class="btn btn-success">Register</button>
+            </div>
+        </form>
+        {{vm.validationMessages}}
+        
+        
+        
+
+    </div>
+</div>
+
+
+

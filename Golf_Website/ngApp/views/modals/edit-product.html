@@ -1,0 +1,61 @@
+﻿<div class="modal-header">
+    <h1>{{vm.data.shortDesc}}</h1>
+</div>
+<form ng-submit="vm.editProduct(vm.data)">
+    <div class="modal-body">
+        <div class="row form-group">
+            <div class="col-md-6">
+                <label>Product Id:</label>
+                <input class="form-control" type="text" ng-model="vm.data.prodId" />
+            </div>
+            <div class="col-md-6">
+                <label>Category:</label>
+                <input class="form-control" type="text" ng-model="vm.data.category" />
+            </div>
+        </div>
+        <div class="row form-group">
+            <div class="col-md-6">
+                <label>Make:</label>
+                <input class="form-control" type="text" ng-model="vm.data.make" />
+            </div>
+            <div class="col-md-6">
+                <label>Type:</label>
+                <input class="form-control" type="text" ng-model="vm.data.type" />
+            </div>
+        </div>
+        <div class="row form-group">
+            <div class="col-md-6">
+                <label>Short Desc</label>
+                <input class="form-control" type="text" ng-model="vm.data.shortDesc" />
+            </div>
+            <div class="col-md-6">
+                <label>File Name</label>
+                <input class="form-control" type="text" ng-model="vm.data.fileName" />
+            </div>
+        </div>
+        <div class="row form-group">
+            <div class="col-md-6">
+                <label>Price</label>
+                <input class="form-control" type="text" ng-model="vm.data.price" />
+            </div>
+            <div class="col-md-6">
+                <label>Sv</label>
+                <input class="form-control btn btn-primary" type="submit" value="Save" />
+            </div>
+
+        </div>
+    </div>
+</form>
+<div class="modal-footer">
+    <div class="row">
+        <div class="col-md-4">
+            <button ng-click="vm.deleteProduct(vm.data.id, vm.data.shortDesc, vm.data.type)" class="form-control btn btn-danger">Delete</button>
+        </div>
+
+        <div class="col-md-4">
+            <button class="form-control btn btn-success" ng-click="vm.closeModal()">Cancel</button>
+        </div>
+    </div>
+</div>
+
+

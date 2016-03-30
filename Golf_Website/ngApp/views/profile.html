@@ -1,0 +1,32 @@
+﻿<div class="profile_contain">
+    <table class="profile">
+        <tr>
+            <th colspan="2">{{vm.profileInfo.firstName}} {{vm.profileInfo.lastName}}'s Profile</th>
+        </tr>
+        <tr>
+            <td class="text-center" colspan="2">
+                <button class="text-center btn btn-success" ng-show="vm.showEdit" ng-click="vm.editProfileModal(vm.profileInfo)">Edit Profile</button>
+            </td>
+        </tr>
+        <tr>
+            <td class="pic" colspan="2">
+                <img class="profile_pic" src="{{vm.profileInfo.picUrl}}" />
+            </td>
+        </tr>
+        <tr>
+            <td>Name: {{vm.profileInfo.firstName}} {{vm.profileInfo.lastName}}</td>
+            <td>Location: {{vm.profileInfo.city}}, {{vm.profileInfo.state}}</td>
+        </tr>
+        <tr>
+            <td>Sex: {{vm.profileInfo.sex}}</td>
+            <td>Age: {{vm.profileInfo.age}}</td>
+        </tr>
+        <tr>
+            <td>Handicap: {{vm.profileInfo.handicap}}</td>
+            <td>Driving Distance: {{vm.profileInfo.drivingDistance}} yds</td>
+        </tr>
+        <tr>
+            <td colspan="2">Home Course: {{vm.profileInfo.homeCourse}}</td>
+        </tr>
+    </table>
+</div>

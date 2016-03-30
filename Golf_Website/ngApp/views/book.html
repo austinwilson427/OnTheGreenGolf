@@ -1,0 +1,74 @@
+﻿<div class="full_bg">
+    <div class="row">
+        <div class="col-md-4 col-md-offset-4">
+            <label class="select_label">Select Your Course</label>
+            <select class="form-control margin_top" ng-model="vm.selectedCourse" ng-change="vm.changePage()">
+                <option ng-repeat="course in vm.courseList" value="{{course.id}}" ng-model="vm.course.select">{{course.courseName}}</option>
+            </select>
+            <div ng-show="vm.showTimes">
+                <label class="select_label">Select Your Time</label>
+                <select class="form-control" ng-model="vm.dateRange">
+                    <option value="0">7:00 AM - 8:15 AM</option>
+                    <option value="1">8:30 AM - 9:45 AM</option>
+                    <option value="2">10:00 AM - 11:15 AM</option>
+                    <option value="3">11:30 AM - 12:45 PM</option>
+                    <option value="4">1:00 PM - 2:15 PM</option>
+                    <option value="5">2:30 PM - 3:45 PM</option>
+                    <option value="6">4:00 PM - 5:15 PM</option>
+                </select>
+            </div>
+            
+        </div>
+    </div>
+    <div class="row">
+        <div ng-repeat="time in vm.allTeeTimes | orderBy: 'resTime' | filter: {courseId : vm.courseId}" class="col-md-4">
+            <table class="inner_tee" ng-if="vm.compareTimes(time.resTime)">
+                <tr>
+                    <td class="teeTime" colspan="2">{{time.resTime | date:'h:mm a'}}</td>
+                </tr>
+                <tr>
+                    <td>
+                        <button type="button" ng-show="!time.a" class="btn btn-default" aria-label="Left Align" ng-click="vm.showTeeTimeModal(time, 'a', vm.currentCourse)">
+                            <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
+                        </button>
+                        <div ng-show="time.a">
+                            <a href="#" ng-click="vm.showProfileModal(time.a)"><img class="book_pic" ng-show="time.a" ng-src="{{time.aPic}}" /></a>
+                            <p>HC: {{time.aHandicap}}</p>
+                        </div>
+
+
+                    </td>
+                    <td>
+                        <button type="button" ng-show="!time.b" class="btn btn-default" aria-label="Left Align" ng-click="vm.showTeeTimeModal(time, 'b', vm.currentCourse)">
+                            <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
+                        </button>
+                        <div ng-show="time.b">
+                            <a href="#" ng-click="vm.showProfileModal(time.b)"><img class="book_pic" ng-show="time.b" ng-src="{{time.bPic}}" /></a>
+                            <p>HC: {{time.bHandicap}}</p>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <button type="button" ng-show="!time.c" class="btn btn-default" aria-label="Left Align" ng-click="vm.showTeeTimeModal(time, 'c', vm.currentCourse)">
+                            <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
+                        </button>
+                        <div ng-show="time.c">
+                            <a href="#" ng-click="vm.showProfileModal(time.c)"><img class="book_pic" ng-show="time.c" ng-src="{{time.cPic}}" /></a>
+                            <p>HC: {{time.cHandicap}}</p>
+                        </div>
+                    </td>
+                    <td>
+                        <button type="button" ng-show="!time.d" class="btn btn-default" aria-label="Left Align" ng-click="vm.showTeeTimeModal(time, 'd', vm.currentCourse)">
+                            <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
+                        </button>
+                        <div ng-show="time.d">
+                            <a href="#" ng-click="vm.showProfileModal(time.d)"><img class="book_pic" ng-show="time.d" ng-src="{{time.dPic}}" /></a>
+                            <p>HC: {{time.dHandicap}}</p>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</div>

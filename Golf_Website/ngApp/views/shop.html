@@ -1,0 +1,100 @@
+﻿<div class="shopping_contain" ng-mouseup="vm.filteringItems()">
+    <div class="row">
+        <div class="col-md-6 col-md-offset-3">
+            <div class="form-group">
+                <p class="select_product_label" for="sel1">Select A Category and Start Shopping!</p>
+                <select class="form-control item_type" id="sel1" ng-model="vm.selectedItemType" ng-change="vm.listMakes(); vm.filteringItems()">
+                    <option ng-repeat="item in vm.itemTypes">{{item}}</option>
+                </select>
+                <br />
+                <input class="ng-hide form-control item_type" type="text" ng-model="vm.searchPhrase" ng-show="vm.selectedItemType != 'None'" ng-change="vm.filteringItems()" placeholder="Search for {{vm.selectedItemType}}" />
+                <div class="text-center">
+                    <button ng-click="vm.addProductModal()" class="btn btn-primary margin_top">Add Product</button>
+                </div>
+                    
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-3 makes_check">
+            <table class="table table-condensed">
+                <caption ng-show="!!vm.itemTypeFromSelection">Makes</caption>
+                <tr ng-repeat="item in vm.itemTypeFromSelection">
+                    <td>
+                        <div class="checkbox">
+                            <input type="checkbox" ng-click="vm.filteringItems()" ng-model="item.selected" value={{item.subCat}} />{{item.subCat}}
+                        </div>
+                    </td>
+                </tr>
+            </table>
+            <div ng-show="!!vm.itemTypeFromSelection">
+                <h4>Price Ranger</h4>
+                <div range-slider min="vm.priceRange.range.min" max="vm.priceRange.range.max" model-min="vm.priceRange.minPrice" model-max="vm.priceRange.maxPrice" filter="currency:'$'" step="10" show-values="true"></div>
+            </div>
+        </div>
+        <div class="main_shop_display col-md-9" ng-show="!!vm.itemTypeFromSelection">
+            <div class="row items_count">
+                Total Items: {{vm.itemsToShowCount}}
+            </div>
+            <div class="row pag_sort">
+                <div class="col-md-4 items_sect">
+                    <div ng-show="vm.showItemsPerPageBool == true">
+                        <ul class="item_per_page">
+                            <li><label>Items Per Page</label></li>
+                            <li ng-repeat="page in vm.pageNumbers"><a href="#" ng-model="vm.paginationNum" ng-click="vm.findItemsPerPage(page)">{{page}}</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-3 sort_sect">
+                    <select ng-model="vm.sortCat" ng-click="vm.sortBy(); vm.filteringItems()">
+                        <option ng-if="!vm.sortCat" value="{{vm.sortCat}}">--Sort By--</option>
+                        <option value="price">Price (Low to High)</option>
+                        <option value="-price">Price (High to Low)</option>
+                        <option value="rating">Rating (Low to High)</option>
+                        <option value="-rating">Rating (High to Low)</option>
+                        <option value="make">Make (A-Z)</option>
+                        <option value="-make">Make (Z-A)</option>
+                    </select>
+                </div>
+                <div class="col-md-3 pagination_sect">
+                    <table ng-hide="vm.showPagBool==false">
+                        <tr>
+                            <td>Page: </td>
+                            <td ng-repeat="page in vm.pageArray"><a href="#" ng-model="vm.paginationNum" ng-click="vm.showPagination(page-1)">{{page}}</a></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="row details_of_items">
+                <div ng-repeat="(key, value) in vm.filteredItems | filter: vm.selectedItemType" class="col-md-4 spacing_items">
+                    <table class="items_table">
+                        <tr>
+                            <td><a ng-click="vm.editProductModal(value)" href="#"><img src="{{value.fileName}}" /></a> </td>
+                        </tr>
+                        <tr>
+                            <td>{{value.shortDesc}}</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="rateit" data-rateit-value="3.24" data-rateit-ispreset="true" data-rateit-readonly="true"></div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>{{value.price | currency}}</td>
+                        </tr>
+                        <tr>
+                            <td><uib-rating ng-model="value.rating" max="vm.max" readonly="vm.isReadOnly"></uib-rating><span class="item_rating">{{value.rating}}</span></td>
+                        </tr>
+                        <tr class="item_added_row" ng-show="vm.isLoggedIn">
+                            <td>Quantity: <input class="quantity_box" type="number" ng-model="value.quantity" placeholder="0" /><button ng-click="vm.addItemToCart(value)" class="add_to_cart btn btn-primary">Add to Cart</button></td>
+                        </tr>
+                        <tr id="{{value.prodId}}">
+                        </tr>
+                        <tr class="{{value.prodId}}"></tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>

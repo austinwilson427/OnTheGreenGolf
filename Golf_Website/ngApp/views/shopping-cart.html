@@ -1,0 +1,37 @@
+﻿<div class="row shopping_cart">
+    <div class="col-md-10 col-md-offset-1">
+        <table class="table table-hover">
+            <caption>Shopping Cart List</caption>
+            <tr>
+                <th ng-click="vm.doSort('itemName')">Item Name</th>
+                <th class="text-center" ng-click="vm.doSort('itemQuantity')">Quantity</th>
+                <th class="text-center" ng-click="vm.doSort('itemPrice')">Price</th>
+                <th class="text-center" ng-click="vm.doSort('itemTotal')">Total</th>
+                <th class="text-center">Delete</th>
+                <th class="text-center">Edit/Save</th>
+            </tr>
+            <tr ng-repeat="item in vm.myItems | orderBy: vm.sortBy : vm.reverse track by $index ">
+                <td>{{item.itemName}}</td>
+                <td class="text-center" ng-show="item.itemEdit"><input class="quantity_box" type="number" ng-model="item.itemQuantity" /></td>
+                <td class="text-center" ng-show="!item.itemEdit">{{item.itemQuantity}}</td>
+                <td class="text-center">{{item.itemPrice | currency}}</td>
+                <td class="text-center">{{item.itemQuantity * item.itemPrice | currency}}</td>
+                <td class="text-center"><a href="#" ng-click="vm.deleteItem(item)"><span class="glyphicon glyphicon-trash"></span></a></td>
+                <td ng-show="!item.itemEdit" class="text-center"><a href="#" ng-click="vm.showUpdateScreen(item)"><span class="glyphicon glyphicon-edit" aria-hidden="true"></span></a></td>
+                <td ng-show="item.itemEdit" class="text-center"><a href="#" ng-click="vm.editItemAtCheckout(item)"><span class="glyphicon glyphicon-saved" aria-hidden="true"></span></a></td>
+            </tr>
+            <tr>
+                <th class="text-right">Item Count:</th>
+                <th>{{vm.totalItems}}</th>
+                <th class="text-right">Total Cost:</th>
+                <th>{{vm.totalCost | currency}}</th>
+                <th></th>
+            </tr>
+        </table>
+        <div class="row">
+            <div class="col-md-6 col-md-offset-3 form-group">
+                <button class="form-control btn btn-success" ng-click="vm.addCheckoutModal()">Checkout</button>
+            </div>
+        </div>
+    </div>
+</div>

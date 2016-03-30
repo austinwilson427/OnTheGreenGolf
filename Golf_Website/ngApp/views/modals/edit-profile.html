@@ -1,0 +1,39 @@
+﻿<div class="modal-header">
+    <h2>Edit Profile</h2>
+</div>
+<form class="form-group" ng-submit="vm.editProfile(profile)">
+    <div class="modal-body">
+        <div class="row">
+            <div class="col-md-6">
+
+                <label>First Name</label>
+                <input class="form-control" type="text" ng-model="vm.data.firstName" />
+                <label>Last Name</label>
+                <input class="form-control" type="text" ng-model="vm.data.lastName" />
+                <label>Email</label>
+                <input class="form-control" type="email" ng-model="vm.data.email" />
+                <label>City</label>
+                <input class="form-control" type="text" ng-model="vm.data.city" />
+                <label>State</label>
+                <input class="form-control" type="text" ng-model="vm.data.state" />
+
+            </div>
+            <div class="col-md-6">
+                <label>Zip</label>
+                <input class="form-control" type="text" ng-model="vm.data.zip" />
+                <label>Home Course</label>
+                <input class="form-control" type="text" ng-model="vm.data.homeCourse" />
+                <label>Handicap</label>
+                <input class="form-control" type="text" ng-model="vm.data.handicap" />
+                <label>Driving Distance</label>
+                <input class="form-control" type="number" ng-model="vm.data.drivingDistance" />
+                <label>Pic URL</label>
+                <input class="form-control" type="text" ng-model="vm.data.picUrl" />
+            </div>
+        </div>
+    </div>
+    <div class="modal-footer">
+        <button class="btn btn-primary" ng-click="vm.editProfile(vm.data)">Edit Profile</button>
+        <a href="#" class="btn btn-danger" ng-click="vm.closeModal()">Cancel</a>
+    </div>
+</form>

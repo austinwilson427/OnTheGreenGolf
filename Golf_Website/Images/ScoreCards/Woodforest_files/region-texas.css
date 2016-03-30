@@ -1,0 +1,42 @@
+div#header {background:url('/images/v4/header-texas.jpg') #000;}
+
+div.texasheader {background: #4f2519 5px 6px url(/images/submitdots.png) no-repeat; border-top: solid 1px #000000; border-left: solid 1px #000000; border-right: solid 1px #000000; font-family: arial; color: #ffffff; font-weight: bold; font-size: 12px; padding: 2px 2px 2px 25px;}
+div.texasbody {border: solid 1px #000000; padding: 5px; background-color: #f5f5f5;}
+td.texaspanel {background-color: #874601;}
+
+div#regiontitle {color:#060; padding: 0 10px 3px 10px; border-left:solid 1px #555; border-bottom:solid 1px #555; font-size:18px; font-weight:bold;}
+div#regiontitle {-moz-border-radius-bottomleft:8px; -webkit-border-bottom-left-radius:8px; -khtml-border-radius-bottomleft: 8px; border-bottom-left-radius:8px;}
+
+div#rfeedbacktexas {}
+div#rfeedbacktexasbracer {text-align: center; font-weight: bold; font-size: 12px; border:solid 1px #777777; background-color: #f5f5f5; margin-top: 10px; margin-bottom: 10px;}
+div#rfeedbacktexasbracer div#bracercontainer {padding:5px;}
+div#rfeedbacktexasnavcontainer {padding:5px; background-color:#69292C;}
+div#rfeedbacktexasnavcontainer span {font-size: 11px; font-family: verdana, tahoma, arial; font-weight: bold; color: #ffffff; font-weight: bold;}
+div#rfeedbacktexasnavusersearch {padding-top: 5px; text-align:right;}
+div#rfeedbacktexasnavusersearch span {font-size: 11px; font-family: verdana, tahoma, arial; font-weight: bold; color: #ffffff; font-weight: bold;}
+div#rfeedbacktexasnav {padding: 5px;}
+div#rfeedbacktexasnav span {font-size: 11px; font-family: verdana, tahoma, arial; font-weight: bold; color: #ffffff; font-weight: bold;}
+div#rfeedbacktexasreview {margin-top:5px; margin-bottom:5px; border:solid 1px #777; -moz-border-radius:5px; -webkit-border-radius:5px; -khtml-border-radius: 5px; border-radius:5px;}
+div#rfeedbacktexasreview div#reviewcontainer {padding:10px; background-color:transparent;}
+div#rfeedbacktexasreview div#head {margin-bottom:5px;}
+div#rfeedbacktexasreview div#head a.title {font-size:14px;font-weight:bold;}
+div#rfeedbacktexasreview div#head span.loc {font-size:12px;font-weight:bold;}
+div#rfeedbacktexasreview div#head span.reviewedby {font-size:11px;font-weight:bold;}
+div#rfeedbacktexasreview div#review {}
+div#rfeedbacktexasreview div#foot {margin-top:5px; text-align:right; font-size: 10px; font-style: italic;}
+
+div#spctexas {}
+div#spctexas #filter {background-color:#eee; border: solid 1px #555;}
+div#spctexas #filter #filtercontainer {padding:8px; text-align:right;}
+div#spctexas #filter select {padding:4px; border:solid 1px #777; -moz-border-radius:5px; -webkit-border-radius:5px; -khtml-border-radius: 5px; border-radius:5px;}
+div#spctexas #filter input.specialssubmit {padding:4px 8px; background-color:#ffc; color:#333; border:outset 1px #555; -moz-border-radius:5px; -webkit-border-radius:5px; -khtml-border-radius: 5px; border-radius:5px;}
+div#spctexas #specialsheader {margin-top:10px; background:#69292C url('/images/v4/header-texas.jpg'); padding:5px 10px; font-weight:bold; border:solid 1px #777;}
+div#spctexas #specialsheader {-moz-border-radius-topright:5px; -moz-border-radius-topleft:5px; -webkit-border-top-right-radius:5px; -webkit-border-top-left-radius:5px;}
+div#spctexas #specialsheader {-khtml-border-radius-topright: 5px; -khtml-border-radius-topleft: 5px; border-top-right-radius:5px; border-top-left-radius:5px;}
+div#spctexas #specialsheader #coursename {font-size:12px;}
+div#spctexas #specialsheader #category {color:#fff;}
+div#spctexas #specialsbody {margin-top:2px; padding:10px; border:solid 1px #777;}
+div#spctexas #specialsbody {-moz-border-radius-bottomright:5px; -moz-border-radius-bottomleft:5px; -webkit-border-bottom-right-radius:5px; -webkit-border-bottom-left-radius:5px;}
+div#spctexas #specialsbody {-khtml-border-radius-bottomright: 5px; -khtml-border-radius-bottomleft: 5px; border-bottom-right-radius:5px; border-bottom-left-radius:5px;}
+div#spctexas #specialsbody #title {margin-bottom:5px; padding:3px 5px; border:solid 1px #777; background-color:#EAF0E8; font-size:14px; font-weight:bold;}
+div#spctexas #noresults {margin-top:10px; background-color:#efe; padding:20px 10px; text-align:center; font-weight:bold; border:solid 1px #777; -moz-border-radius:5px; -webkit-border-radius:5px; -khtml-border-radius: 5px; border-radius:5px;}

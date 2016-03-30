@@ -1,0 +1,20 @@
+﻿<table>
+    <caption>Confirmed</caption>
+    <tr ng-repeat="friends in vm.confirmedFriends">
+        <td><a href="/profile/{{friends}}">{{friends}}</a></td>
+    </tr>
+</table>
+
+<table>
+    <caption>You've Requested</caption>
+    <tr ng-repeat="friends in vm.requestedFriends">
+        <td><a href="/profile/{{friends}}">{{friends}}</a></td>
+    </tr>
+</table>
+
+<table>
+    <caption>Requested You</caption>
+    <tr ng-repeat="friends in vm.requestedUser">
+        <td><a href="/profile/{{friends}}">{{friends}}</a></td>
+    </tr>
+</table>

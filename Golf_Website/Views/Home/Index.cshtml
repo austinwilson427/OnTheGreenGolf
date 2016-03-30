@@ -1,0 +1,81 @@
+﻿<!DOCTYPE HTML>
+<html ng-app="MyApp">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <base href="/" />
+    <title>On the Green</title>
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/Content/ui-bootstrap-csp.css" rel="stylesheet" />
+    <link href="~/Content/Site.css" rel="stylesheet" />
+    <link href="~/Content/angular.rangeSlider.css" rel="stylesheet" />
+</head>
+<body ng-cloak>
+    <section class="second">
+        <div class="row">
+            <div class="col-md-2">
+                <span class="otg">O<span class="t">t</span>G</span>
+            </div>
+            <div class="col-md-10">
+                <nav class="second">
+                    <ul ng-controller="NavController as vm" class="nav_ul">
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/shop">Shop</a></li>
+                        <li><a href="/book/0">Book Tee Time</a></li>
+                        <li ng-show="vm.isLoggedIn()"><a href="#" ng-click="vm.showProfileModal(vm.loggedInName)">My Profile</a></li>
+                        <li ng-show="vm.isLoggedIn()"><a href="/admin/products">Admin</a></li>
+                        <li ng-show="!vm.isLoggedIn()"><a href="#" ng-click="vm.showLogInModal()">Sign In</a></li>
+                        <li ng-show="vm.isLoggedIn()"><a href="#" ng-click="vm.logout()">Sign Out</a></li>
+                        <li ng-controller="MyShopController as controller" ng-show="vm.isLoggedIn()"><a href="/cart/{{controller.userName}}" ng-click="controller.getTotalItemsInCart()"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span><span id="cart_count">{{controller.itemCount}}</span></a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </section>
+
+
+    <div ng-view></div>
+
+
+    <script src="~/Scripts/jquery-2.1.4.min.js"></script>
+    <script src="~/Scripts/bootstrap.min.js"></script>
+
+    <script src="~/Scripts/angular.min.js"></script>
+    <script src="~/ngApp/scripts/angular.rangeSlider.js"></script>
+    <script src="~/Scripts/angular-route.min.js"></script>
+    <script src="~/Scripts/angular-resource.min.js"></script>
+    <script src="~/Scripts/angular-animate.min.js"></script>
+    <script src="~/Scripts/angular-ui/ui-bootstrap-tpls.min.js"></script>
+
+    <script type="text/javascript" src="//api.filepicker.io/v2/filepicker.js"></script>
+    <script src="~/ngApp/scripts/angular_filepicker.min.js"></script>
+    <script src="~/Scripts/moment.min.js"></script>
+    <script src="~/Scripts/lodash.js"></script>
+    <script src="~/Scripts/angular-simple-logger.js"></script>
+    <script src="~/Scripts/angular-google-maps.min.js"></script>
+
+    <script src="~/ngApp/app.js"></script>
+    <script src="~/ngApp/services/ShopService.js"></script>
+    <script src="~/ngApp/services/BookService.js"></script>
+    <script src="~/ngApp/services/CourseService.js"></script>
+    <script src="~/ngApp/services/accountService.js"></script>
+    <script src="~/ngApp/services/ProfileService.js"></script>
+    <script src="~/ngApp/services/CartService.js"></script>
+    <script src="~/ngApp/services/ItemCountService.js"></script>
+    <script src="~/ngApp/services/ScorecardService.js"></script>
+    <script src="~/ngApp/services/FriendService.js"></script>
+
+    <script src="~/ngApp/controllers/controllers.js"></script>
+    <script src="~/ngApp/controllers/shopController.js"></script>
+    <script src="~/ngApp/controllers/bookController.js"></script>
+    <script src="~/ngApp/controllers/courseController.js"></script>
+    <script src="~/ngApp/controllers/accountController.js"></script>
+    <script src="~/ngApp/controllers/profileController.js"></script>
+    <script src="~/ngApp/controllers/cartController.js"></script>
+    <script src="~/ngApp/controllers/itemCountController.js"></script>
+    <script src="~/ngApp/controllers/scorecardController.js"></script>
+    <script src="~/ngApp/controllers/adminController.js"></script>
+    <script src="~/ngApp/controllers/homeController.js"></script>
+
+</body>
+</html>

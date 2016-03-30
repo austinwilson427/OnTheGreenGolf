@@ -1,0 +1,584 @@
+﻿.row {
+    margin: 5px;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+a:link, a:visited {
+    color: #4dbd33 !important;
+}
+
+.index_wrap {
+    background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.5)), url("http://www.enshrinerskc.org/images/ormeau_golf_club_fairway.jpg") no-repeat center;
+    background-size: cover;
+    height: 100vh;
+    color: white;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 20px;
+}
+
+.slogan {
+    font-size: 24px;
+    width: 800px;
+}
+
+    .slogan img {
+        padding-bottom: 35px;
+        padding-left: 50px;
+        height: 120px;
+    }
+
+    .slogan h1 {
+        font-size: 45px;
+    }
+
+    .slogan p {
+        float: left;
+        font-size: 50px;
+        vertical-align: text-bottom;
+    }
+
+.first_row {
+    margin-top: 80px !important;
+}
+
+.button_wrap {
+    width: 100%;
+}
+
+.btn-full {
+    display: inline-block;
+}
+
+a.btn-full:link, a.btn-full:visited {
+    border: 2px solid #4dbd33;
+    border-radius: 22px;
+    font-size: 16px;
+    width: 200px;
+    background: linear-gradient(rgba(77,189,51,0.1), rgba(77,189,51,0.1));
+}
+
+a.btn-full:hover, a.btn-full:active {
+    color: white !important;
+    background-color: #4dbd33
+}
+
+section {
+    padding: 20px;
+}
+
+/*Nav Bar*/
+
+#cart_count {
+    font-size: 12px;
+    vertical-align: text-top;
+    position: relative;
+    bottom: 8px;
+    left: 3px;
+}
+
+.otg {
+    border: 3px solid white;
+    padding: 23px 8px;
+    font-size: 32px;
+    letter-spacing: 6px;
+    border-radius: 200px;
+    color: white;
+    margin-left: 20px;
+}
+
+.t {
+    font-size: 16px;
+    border-bottom: 2px solid white;
+    padding-bottom: 5px;
+}
+
+section.second {
+    background: linear-gradient(rgba(0,0,0,0.95), rgba(0,0,0,0.95)), url("http://www.enshrinerskc.org/images/ormeau_golf_club_fairway.jpg") no-repeat center;
+    background-size: cover;
+    color: white;
+    background-attachment: fixed;
+}
+
+    section.second a:link, section.second a:visited {
+        color: white;
+    }
+
+    section.second a:hover, section.second a:active {
+        color: #4dbd33;
+        text-decoration: none;
+    }
+
+.nav_ul {
+    list-style: none;
+    padding-top: 10px;
+}
+
+nav.second {
+    float: right;
+}
+
+    nav.second li {
+        display: inline;
+        padding: 0 20px;
+        font-size: 18px;
+        border-right: 1px solid white;
+    }
+
+    nav.second ul li:last-child {
+        border-right: none;
+    }
+
+    nav.second ul.nav_ul li a:link, nav.second ul.nav_ul li a:visited {
+        color: white !important;
+    }
+
+    nav.second ul.nav_ul li a:hover, nav.second ul.nav_ul li a:active {
+        color: #4dbd33 !important;
+    }
+
+/*Index*/
+
+
+/*Shopping*/
+
+.select_product_label {
+    font-size: 24px;
+    margin: 50px auto 10px;
+    text-align: center;
+}
+
+.item_type {
+    width: 60% !important;
+    text-align: center;
+    margin: auto;
+}
+
+.glyphicon-ok-circle {
+    font-size: 24px;
+    top: 6px;
+    margin-right: 6px;
+}
+
+.proceed_to_co {
+    padding: 2px;
+    text-align: center;
+    color: #4dbd33;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+table.shop_listings {
+    width: 100%;
+    border: 1px solid #ddd;
+}
+
+    table.shop_listings td.item_img {
+        padding-top: 20px;
+    }
+
+    table.shop_listings td {
+        padding: 5px;
+        border: 1px solid #ddd;
+    }
+
+    table.shop_listings table {
+        margin: auto;
+    }
+
+        table.shop_listings table td {
+            margin: auto;
+            border: none;
+        }
+
+table.product_extras:hover {
+    background-color: #f9f9f9;
+}
+
+table.items_table {
+    border-collapse: collapse;
+}
+
+ul.item_per_page {
+    list-style: none;
+}
+
+    ul.item_per_page li:first-child, ul.item_per_page li:last-child {
+        border: none;
+    }
+
+    ul.item_per_page li {
+        display: inline-block;
+        padding: 0 6px 0 6px;
+        border-right: 1px solid gray;
+    }
+
+.items_count {
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+    padding: 10px 0;
+    text-decoration: underline;
+}
+
+.main_shop_display {
+}
+
+.pag_sort {
+    padding: 10px;
+    border-bottom: 1px solid gray;
+}
+
+.items_sect {
+    float: left;
+}
+
+.sort_sect {
+    text-align: right;
+}
+
+.pagination_sect {
+    float: right;
+}
+
+.details_of_items {
+    padding-top: 25px;
+}
+
+.spacing_items {
+    height: 450px;
+}
+
+span.item_rating {
+    font-size: 11px;
+    vertical-align: text-top;
+    padding: 0 6px 0 0;
+    color: blue;
+}
+
+.glyphicon-star, .glyphicon-star-empty {
+    color: #4dbd33;
+}
+
+input.quantity_box {
+    width: 50px;
+    text-align: center;
+}
+
+button.add_to_cart {
+    font-size: 12px;
+    margin-left: 10px;
+    height: 30px;
+    padding: 5px;
+}
+
+table.items_table tr.item_added_row td {
+    padding-bottom: 10px;
+}
+
+.item_added {
+    background-color: #4dbd33;
+    color: white;
+    text-align: center;
+    border-radius: 20px;
+    padding: 0 0 6px;
+    font-size: 16px;
+    position: relative;
+    bottom: 5px;
+}
+
+.makes_check {
+    padding-top: 83px;
+}
+/*Shopping Add Product*/
+.margin_top {
+    margin: 10px 0 0 0 !important;
+}
+
+/*Tee Times - Booking*/
+
+.full_bg {
+    background: linear-gradient(rgba(0,0,0,0.15), rgba(0,0,0,0.92)), url("http://www.enshrinerskc.org/images/ormeau_golf_club_fairway.jpg") no-repeat center;
+    background-size: cover;
+    color: white;
+    background-attachment: fixed;
+    height: 100%;
+    min-height: 100vh;
+    padding: 10px;
+}
+
+label.select_label {
+    font-size: 24px;
+    font-weight: 300;
+}
+
+table.all_tee_times {
+    width: 96%;
+    margin: 50px auto;
+}
+
+table.inner_tee {
+    background: linear-gradient(rgba(0,0,0,0.85), rgba(0,0,0,0.85)), url("http://www.enshrinerskc.org/images/ormeau_golf_club_fairway.jpg") no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+    width: 350px;
+    height: 300px;
+    margin: 20px auto;
+}
+
+    table.inner_tee td {
+        border: 1px solid white;
+        text-align: center;
+        width: 150px;
+        height: 150px;
+    }
+
+        table.inner_tee td.teeTime {
+            background: linear-gradient(rgba(0,0,0,0.95), rgba(0,0,0,0.95)), url("http://www.enshrinerskc.org/images/ormeau_golf_club_fairway.jpg") no-repeat center;
+            background-size: cover;
+            background-attachment: fixed;
+            height: 50px;
+            font-size: 24px;
+        }
+
+td.player_insert {
+    border: 1px solid white;
+    text-align: center;
+}
+
+img.book_pic {
+    height: 100px;
+    width: 100px;
+}
+
+.tee_time_confirm{
+    width: 80%;
+    margin: auto;
+}
+
+.tee_time_confirm td{
+    font-size: 24px;
+    text-align: center;
+    padding-top: 10px;
+}
+.tee_time_confirm th{
+    text-align: center;
+    font-size: 32px;
+    border-bottom: 1px solid black;
+}
+
+h5{
+    padding-top: 10px;
+    font-size: 14px;
+    text-align: center;
+}
+
+h4{
+    text-align: center;
+    font-size: 20px;
+}
+/*Profile*/
+
+.profile_contain {
+    color: white;
+}
+
+table.profile {
+    background: linear-gradient(rgba(0,0,0,0.9), rgba(0,0,0,0.9)), url("http://www.enshrinerskc.org/images/ormeau_golf_club_fairway.jpg") no-repeat center;
+    background-size: cover;
+    color: white;
+    background-attachment: fixed;
+    border: 1px solid white;
+    width: 100%;
+    margin: 0 auto;
+    font-size: 16px;
+}
+
+    table.profile th, table.profile td.pic {
+        text-align: center;
+        padding: 0;
+    }
+
+    table.profile td {
+        padding: 5px 5px 5px 50px;
+    }
+
+img.profile_pic {
+    height: 300px;
+    width: auto;
+}
+
+/*Scorecard*/
+
+.add_course{
+    margin: 20px;
+}
+
+input.score {
+    width: 40px;
+    text-align: center;
+    color: red;
+}
+
+.scorecards_wrap {
+    border: 1px solid black;
+    width: 60%;
+    margin: auto;
+    background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url("http://www.enshrinerskc.org/images/ormeau_golf_club_fairway.jpg") no-repeat center;
+    background-size: cover;
+    color: white;
+    background-attachment: fixed;
+}
+
+table.scorecard {
+    margin: 10px auto;
+    width: 96%;
+    
+}
+
+    table.scorecard td, table.scorecard th {
+        text-align: center;
+        width: 40px;
+        border: 1px solid black;
+    }
+
+tr.green {
+    background-color: green;
+    color: white;
+}
+
+tr.brown {
+    background-color: saddlebrown;
+    color: white;
+}
+
+tr.gold {
+    background-color: darkgoldenrod;
+    color: black;
+}
+
+tr.light_gold {
+    background-color: palegoldenrod;
+    color: black;
+}
+
+tr.red {
+    background-color: blueviolet;
+    color: white;
+}
+
+tr.myGreen {
+    background-color: #4dbd33;
+    color: black;
+    font-weight: 600;
+}
+
+td.update, td.delete {
+    border: none !important;
+}
+
+    td.update button, td.delete button {
+        width: 200px !important;
+        margin-top: 10px;
+    }
+
+    tr.hc_color{
+        background-color: blue;
+    }
+/*Shopping Cart*/
+.shopping_cart {
+    margin-top: 50px !important;
+}
+
+/*Scorecard*/
+
+.scorecard_contain{
+    background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.5)), url("http://www.enshrinerskc.org/images/ormeau_golf_club_fairway.jpg") no-repeat center;
+    min-height: 100vh;
+    background-size: cover;
+    height: 100vh;
+    height: 100%;
+    color: white;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 20px;
+}
+
+tr.course_details td, tr.course_details th{
+    border: none;
+    padding-bottom: 5px;
+}
+tr.course_details td{
+    font-size: 16px;
+}
+tr.course_details th{
+    font-size: 20px;
+}
+
+/*About Us*/
+section#about {
+    background-color: #d3d3d3;
+    margin: 0;
+    padding-bottom: 80px;
+}
+
+    section#about h2 {
+        color: #1c4513;
+        border-bottom: 2px solid #1c4513;
+        width: 400px;
+        text-align: center;
+        margin: 70px auto;
+        padding-bottom: 8px;
+    }
+
+.about_us_contain {
+    width: 90%;
+    margin: auto;
+    font-size: 18px;
+    line-height: 30px;
+}
+
+.angular-google-map-container {
+    height: 400px;
+    border: 1px solid black;
+}
+
+#location{
+    background-color:#0c1d08 ;
+}
+
+.contact_us{
+    width: 80%;
+    margin: auto;
+    font-size: 32px;
+    color: white;
+}
+
+.contact_us th{
+    font-size: 42px;
+    text-align: center;
+    font-weight: 300;
+    border-bottom: 1px solid white;
+    padding: 10px;
+}
+
+.contact_us td{
+    text-align: center;
+    padding: 10px;
+    font-weight: 300;
+}
+
+a.btn:link, a.btn:visited{
+    color: white !important;
+}
+
+[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+  display: none !important;
+}

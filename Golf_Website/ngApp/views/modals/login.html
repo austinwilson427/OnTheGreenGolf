@@ -1,0 +1,36 @@
+﻿<div class="modal-header">
+    <h1>Please Login</h1>
+</div>
+<div class="modal-body">
+    <ul>
+        <li ng-repeat="error in vm.validationMessages">
+            {{error}}
+        </li>
+    </ul>
+
+    <form ng-submit="vm.login()">
+        <div>
+            <label>UserName:</label>
+            <input class="form-control" ng-model="vm.loginUser.userName" />
+        </div>
+        <div>
+            <label>Password:</label>
+            <input type="password" class="form-control" ng-model="vm.loginUser.password" />
+        </div>
+        <br />
+        <input type="submit" class="btn btn-primary form-control" value="Login" />
+
+    </form>
+</div>
+<div class="model-footer">
+    <div class="row">
+        <div class="col-md-4 col-md-offset-4 form-group">
+            <a href="/register" class="btn btn-primary form-control" ng-click="vm.closeModal()">Register</a>
+        </div>
+        <div class="col-md-4 form-group">
+            <button class="btn btn-danger form-control" ng-click="vm.closeModal()">Cancel</button>
+        </div>
+    </div>
+    
+    
+</div>

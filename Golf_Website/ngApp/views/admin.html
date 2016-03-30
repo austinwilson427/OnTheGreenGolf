@@ -1,0 +1,46 @@
+﻿<table class="table table-hover">
+    <caption>Submitted Orders</caption>
+    <tr>
+        <th ng-click="vm.doSort('id')">Id</th>
+        <th ng-click="vm.doSort('orderDate')">Order Date</th>
+        <th ng-click="vm.doSort('userName')">Username</th>
+        <th ng-click="vm.doSort('prodId')">Prod Id</th>
+        <th ng-click="vm.doSort('itemName')">Item Name</th>
+        <th ng-click="vm.doSort('quantity')">Quantity</th>
+        <th ng-click="vm.doSort('price')">Price</th>
+        <th ng-click="vm.doSort('totalPrice')">Total Cost</th>
+    </tr>
+    <tr ng-repeat="item in vm.cartItems | filter: 'true' | orderBy: vm.sortBy : vm.reverse ">
+        <td>{{item.id}}</td>
+        <td>{{item.orderDate | date: 'MM/dd/yyyy'}}</td>
+        <td>{{item.userName}}</td>
+        <td>{{item.prodId}}</td>
+        <td>{{item.itemName}}</td>
+        <td>{{item.quantity}}</td>
+        <td>{{item.price | currency}}</td>
+        <td>{{item.quantity * item.price | currency}}</td>
+    </tr>
+</table>
+<table class="table table-hover">
+    <caption>Orders In Carts</caption>
+    <tr>
+        <th ng-click="vm.doSort('id')">Id</th>
+        <th ng-click="vm.doSort('orderDate')">Order Date</th>
+        <th ng-click="vm.doSort('userName')">Username</th>
+        <th ng-click="vm.doSort('prodId')">Prod Id</th>
+        <th ng-click="vm.doSort('itemName')">Item Name</th>
+        <th ng-click="vm.doSort('quantity')">Quantity</th>
+        <th ng-click="vm.doSort('price')">Price</th>
+        <th ng-click="vm.doSort('totalPrice')">Total Cost</th>
+    </tr>
+    <tr ng-repeat="item in vm.cartItems | filter: 'false' | orderBy: vm.sortBy : vm.reverse ">
+        <td>{{item.id}}</td>
+        <td>{{item.orderDate | date: 'MM/dd/yyyy'}}</td>
+        <td>{{item.userName}}</td>
+        <td>{{item.prodId}}</td>
+        <td>{{item.itemName}}</td>
+        <td>{{item.quantity}}</td>
+        <td>{{item.price | currency}}</td>
+        <td>{{item.quantity * item.price | currency}}</td>
+    </tr>
+</table>

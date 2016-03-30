@@ -1,0 +1,85 @@
+﻿<div class="modal-header">
+    <h1>Reserve Tee Time</h1>
+</div>
+<div class="modal-body">
+    <div ng-show="vm.page1">
+        <table class="tee_time_confirm">
+            <tr>
+                <th>Course Information</th>
+            </tr>
+            <tr>
+                <td>{{vm.courseToReserve.courseName}}</td>
+            </tr>
+            <tr>
+                <td>{{vm.courseToReserve.city}}, {{vm.courseToReserve.state}}</td>
+            </tr>
+        </table>
+        <h5 ng-show="vm.userName">Reserving tee time on {{vm.data.resTime | date:"MM/dd/yyyy 'at' h:mm a"}} for the course  listed above for: </h5><h4 ng-show="vm.userName">{{vm.userName}}</h4>
+
+        <h5 ng-show="!vm.userName">Please sign in to reserve tee time.</h5>
+    </div>
+    <div ng-show="vm.page2">
+        <form ng-submit="vm.submitOrder()" class="form-group">
+                <div class="row">
+                    <div class="col-md-6">
+                        <label>Card Type</label>
+                        <select class="form-control">
+                            <option>Visa</option>
+                            <option>Mastercard</option>
+                            <option>American Express</option>
+                            <option>Discover</option>
+                        </select>
+                    </div>
+                    <div class="col-md-6">
+                        <h3>Total Cost: $55.00</h3>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <input class="form-control" type="text" placeholder="Name on Credit Card" />
+                    </div>
+                    <div class="col-md-6">
+                        <input class="form-control" type="text" placeholder="Billing Zip Code" />
+                    </div>
+
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <input class="form-control" type="text" placeholder="Credit Card Number" />
+                    </div>
+                    <div class="col-md-3">
+                        <input class="form-control" type="text" placeholder="MM/YY" />
+                    </div>
+                    <div class="col-md-3">
+                        <input class="form-control" type="text" placeholder="CCV" />
+                    </div>
+                </div>
+        </form>
+    </div>
+</div>
+<div class="modal-footer">
+    <div ng-show="vm.userName" class="row">
+        <div class="col-md-4 col-md-offset-4 form-group">
+            <button ng-show="vm.page1" class="btn btn-success form-control" ng-click="vm.nextPage(1)">Next</button>
+            <button ng-show="vm.page2" class="btn btn-primary form-control" ng-click="vm.saveTeeTime(vm.data, vm.char, vm.nameOfPlayer)">Submit Reservation</button>
+        </div>
+        <div class="col-md-4 form-group">
+            <button class="btn btn-danger form-control" ng-click="vm.closeModal()">Cancel</button>
+        </div>
+    </div>
+    <div ng-show="!vm.userName" class="row">
+        <div class="col-md-8 col-md-offset-2 form-group">
+            <button class="btn btn-primary form-control" ng-click="vm.showLogInModal(); vm.closeModal();">Sign In</button>
+            <button class="btn btn-danger form-control margin_top" ng-click="vm.closeModal()">Cancel</button>
+        </div>
+    </div>
+</div>
+<!--<pre>
+{{vm.data}}
+</pre>
+<pre>
+{{vm.char}}
+</pre>
+<pre>
+{{vm.courseToReserve}}
+</pre>-->

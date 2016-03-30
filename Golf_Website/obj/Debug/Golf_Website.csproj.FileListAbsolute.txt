@@ -1,0 +1,236 @@
+c:\users\lauren\documents\visual studio 2015\Projects\Golf_Website\Golf_Website\bin\roslyn\csc.exe
+c:\users\lauren\documents\visual studio 2015\Projects\Golf_Website\Golf_Website\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+c:\users\lauren\documents\visual studio 2015\Projects\Golf_Website\Golf_Website\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+c:\users\lauren\documents\visual studio 2015\Projects\Golf_Website\Golf_Website\bin\roslyn\Microsoft.CodeAnalysis.dll
+c:\users\lauren\documents\visual studio 2015\Projects\Golf_Website\Golf_Website\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+c:\users\lauren\documents\visual studio 2015\Projects\Golf_Website\Golf_Website\bin\roslyn\Microsoft.CSharp.Core.targets
+c:\users\lauren\documents\visual studio 2015\Projects\Golf_Website\Golf_Website\bin\roslyn\Microsoft.VisualBasic.Core.targets
+c:\users\lauren\documents\visual studio 2015\Projects\Golf_Website\Golf_Website\bin\roslyn\System.Collections.Immutable.dll
+c:\users\lauren\documents\visual studio 2015\Projects\Golf_Website\Golf_Website\bin\roslyn\System.Reflection.Metadata.dll
+c:\users\lauren\documents\visual studio 2015\Projects\Golf_Website\Golf_Website\bin\roslyn\vbc.exe
+c:\users\lauren\documents\visual studio 2015\Projects\Golf_Website\Golf_Website\bin\roslyn\VBCSCompiler.exe
+c:\users\lauren\documents\visual studio 2015\Projects\Golf_Website\Golf_Website\bin\roslyn\VBCSCompiler.exe.config
+c:\users\lauren\documents\visual studio 2015\Projects\Golf_Website\Golf_Website\bin\CoderCamps-SPA.dll.config
+c:\users\lauren\documents\visual studio 2015\Projects\Golf_Website\Golf_Website\bin\CoderCamps-SPA.dll
+c:\users\lauren\documents\visual studio 2015\Projects\Golf_Website\Golf_Website\bin\CoderCamps-SPA.pdb
+c:\users\lauren\documents\visual studio 2015\Projects\Golf_Website\Golf_Website\bin\Antlr3.Runtime.dll
+c:\users\lauren\documents\visual studio 2015\Projects\Golf_Website\Golf_Website\bin\EntityFramework.dll
+c:\users\lauren\documents\visual studio 2015\Projects\Golf_Website\Golf_Website\bin\EntityFramework.SqlServer.dll
+c:\users\lauren\documents\visual studio 2015\Projects\Golf_Website\Golf_Website\bin\Microsoft.AspNet.Identity.Core.dll
+c:\users\lauren\documents\visual studio 2015\Projects\Golf_Website\Golf_Website\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+c:\users\lauren\documents\visual studio 2015\Projects\Golf_Website\Golf_Website\bin\Microsoft.AspNet.Identity.Owin.dll
+c:\users\lauren\documents\visual studio 2015\Projects\Golf_Website\Golf_Website\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+c:\users\lauren\documents\visual studio 2015\Projects\Golf_Website\Golf_Website\bin\Microsoft.Owin.dll
+c:\users\lauren\documents\visual studio 2015\Projects\Golf_Website\Golf_Website\bin\Microsoft.Owin.Host.SystemWeb.dll
+c:\users\lauren\documents\visual studio 2015\Projects\Golf_Website\Golf_Website\bin\Microsoft.Owin.Security.Cookies.dll
+c:\users\lauren\documents\visual studio 2015\Projects\Golf_Website\Golf_Website\bin\Microsoft.Owin.Security.dll
+c:\users\lauren\documents\visual studio 2015\Projects\Golf_Website\Golf_Website\bin\Microsoft.Owin.Security.Facebook.dll
+c:\users\lauren\documents\visual studio 2015\Projects\Golf_Website\Golf_Website\bin\Microsoft.Owin.Security.Google.dll
+c:\users\lauren\documents\visual studio 2015\Projects\Golf_Website\Golf_Website\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+c:\users\lauren\documents\visual studio 2015\Projects\Golf_Website\Golf_Website\bin\Microsoft.Owin.Security.OAuth.dll
+c:\users\lauren\documents\visual studio 2015\Projects\Golf_Website\Golf_Website\bin\Microsoft.Owin.Security.Twitter.dll
+c:\users\lauren\documents\visual studio 2015\Projects\Golf_Website\Golf_Website\bin\Microsoft.Web.Infrastructure.dll
+c:\users\lauren\documents\visual studio 2015\Projects\Golf_Website\Golf_Website\bin\Newtonsoft.Json.dll
+c:\users\lauren\documents\visual studio 2015\Projects\Golf_Website\Golf_Website\bin\Owin.dll
+c:\users\lauren\documents\visual studio 2015\Projects\Golf_Website\Golf_Website\bin\System.Net.Http.Formatting.dll
+c:\users\lauren\documents\visual studio 2015\Projects\Golf_Website\Golf_Website\bin\System.Web.Helpers.dll
+c:\users\lauren\documents\visual studio 2015\Projects\Golf_Website\Golf_Website\bin\System.Web.Http.dll
+c:\users\lauren\documents\visual studio 2015\Projects\Golf_Website\Golf_Website\bin\System.Web.Http.Owin.dll
+c:\users\lauren\documents\visual studio 2015\Projects\Golf_Website\Golf_Website\bin\System.Web.Http.WebHost.dll
+c:\users\lauren\documents\visual studio 2015\Projects\Golf_Website\Golf_Website\bin\System.Web.Mvc.dll
+c:\users\lauren\documents\visual studio 2015\Projects\Golf_Website\Golf_Website\bin\System.Web.Optimization.dll
+c:\users\lauren\documents\visual studio 2015\Projects\Golf_Website\Golf_Website\bin\System.Web.Razor.dll
+c:\users\lauren\documents\visual studio 2015\Projects\Golf_Website\Golf_Website\bin\System.Web.WebPages.Deployment.dll
+c:\users\lauren\documents\visual studio 2015\Projects\Golf_Website\Golf_Website\bin\System.Web.WebPages.dll
+c:\users\lauren\documents\visual studio 2015\Projects\Golf_Website\Golf_Website\bin\System.Web.WebPages.Razor.dll
+c:\users\lauren\documents\visual studio 2015\Projects\Golf_Website\Golf_Website\bin\WebGrease.dll
+c:\users\lauren\documents\visual studio 2015\Projects\Golf_Website\Golf_Website\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+c:\users\lauren\documents\visual studio 2015\Projects\Golf_Website\Golf_Website\bin\Newtonsoft.Json.xml
+c:\users\lauren\documents\visual studio 2015\Projects\Golf_Website\Golf_Website\bin\System.Net.Http.Formatting.xml
+c:\users\lauren\documents\visual studio 2015\Projects\Golf_Website\Golf_Website\bin\System.Web.Helpers.xml
+c:\users\lauren\documents\visual studio 2015\Projects\Golf_Website\Golf_Website\bin\System.Web.Http.xml
+c:\users\lauren\documents\visual studio 2015\Projects\Golf_Website\Golf_Website\bin\System.Web.Http.WebHost.xml
+c:\users\lauren\documents\visual studio 2015\Projects\Golf_Website\Golf_Website\bin\System.Web.Mvc.xml
+c:\users\lauren\documents\visual studio 2015\Projects\Golf_Website\Golf_Website\bin\System.Web.Optimization.xml
+c:\users\lauren\documents\visual studio 2015\Projects\Golf_Website\Golf_Website\bin\System.Web.Razor.xml
+c:\users\lauren\documents\visual studio 2015\Projects\Golf_Website\Golf_Website\bin\System.Web.WebPages.xml
+c:\users\lauren\documents\visual studio 2015\Projects\Golf_Website\Golf_Website\bin\System.Web.WebPages.Deployment.xml
+c:\users\lauren\documents\visual studio 2015\Projects\Golf_Website\Golf_Website\bin\System.Web.WebPages.Razor.xml
+c:\users\lauren\documents\visual studio 2015\Projects\Golf_Website\Golf_Website\bin\Antlr3.Runtime.pdb
+c:\users\lauren\documents\visual studio 2015\Projects\Golf_Website\Golf_Website\bin\EntityFramework.xml
+c:\users\lauren\documents\visual studio 2015\Projects\Golf_Website\Golf_Website\bin\EntityFramework.SqlServer.xml
+c:\users\lauren\documents\visual studio 2015\Projects\Golf_Website\Golf_Website\bin\Microsoft.AspNet.Identity.Core.xml
+c:\users\lauren\documents\visual studio 2015\Projects\Golf_Website\Golf_Website\bin\Microsoft.AspNet.Identity.Owin.xml
+c:\users\lauren\documents\visual studio 2015\Projects\Golf_Website\Golf_Website\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+c:\users\lauren\documents\visual studio 2015\Projects\Golf_Website\Golf_Website\bin\Microsoft.Owin.xml
+c:\users\lauren\documents\visual studio 2015\Projects\Golf_Website\Golf_Website\bin\Microsoft.Owin.Host.SystemWeb.xml
+c:\users\lauren\documents\visual studio 2015\Projects\Golf_Website\Golf_Website\bin\Microsoft.Owin.Security.xml
+c:\users\lauren\documents\visual studio 2015\Projects\Golf_Website\Golf_Website\bin\Microsoft.Owin.Security.Facebook.xml
+c:\users\lauren\documents\visual studio 2015\Projects\Golf_Website\Golf_Website\bin\Microsoft.Owin.Security.Cookies.xml
+c:\users\lauren\documents\visual studio 2015\Projects\Golf_Website\Golf_Website\bin\Microsoft.Owin.Security.OAuth.xml
+c:\users\lauren\documents\visual studio 2015\Projects\Golf_Website\Golf_Website\bin\Microsoft.Owin.Security.Google.xml
+c:\users\lauren\documents\visual studio 2015\Projects\Golf_Website\Golf_Website\bin\Microsoft.Owin.Security.Twitter.xml
+c:\users\lauren\documents\visual studio 2015\Projects\Golf_Website\Golf_Website\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+c:\users\lauren\documents\visual studio 2015\Projects\Golf_Website\Golf_Website\bin\System.Web.Http.Owin.xml
+c:\users\lauren\documents\visual studio 2015\Projects\Golf_Website\Golf_Website\obj\Debug\Golf_Website.csprojResolveAssemblyReference.cache
+c:\users\lauren\documents\visual studio 2015\Projects\Golf_Website\Golf_Website\obj\Debug\CoderCamps-SPA.dll
+c:\users\lauren\documents\visual studio 2015\Projects\Golf_Website\Golf_Website\obj\Debug\CoderCamps-SPA.pdb
+c:\users\lauren\documents\visual studio 2015\Projects\Golf_Website\Golf_Website\bin\Ninject.dll
+c:\users\lauren\documents\visual studio 2015\Projects\Golf_Website\Golf_Website\bin\Ninject.Web.Common.dll
+c:\users\lauren\documents\visual studio 2015\Projects\Golf_Website\Golf_Website\bin\Ninject.Web.WebApi.dll
+c:\users\lauren\documents\visual studio 2015\Projects\Golf_Website\Golf_Website\bin\Ninject.Web.WebApi.WebHost.dll
+c:\users\lauren\documents\visual studio 2015\Projects\Golf_Website\Golf_Website\bin\WebActivatorEx.dll
+c:\users\lauren\documents\visual studio 2015\Projects\Golf_Website\Golf_Website\bin\Ninject.xml
+c:\users\lauren\documents\visual studio 2015\Projects\Golf_Website\Golf_Website\bin\Ninject.Web.Common.xml
+c:\users\lauren\documents\visual studio 2015\Projects\Golf_Website\Golf_Website\bin\Ninject.Web.WebApi.xml
+c:\users\lauren\documents\visual studio 2015\Projects\Golf_Website\Golf_Website\bin\Ninject.Web.WebApi.WebHost.xml
+C:\Users\Lauren\Documents\Visual Studio 2015\Projects\Golf_Website\Golf_Website\obj\Debug\Golf_Website.Migrations.User.resources
+C:\Users\Lauren\Documents\Visual Studio 2015\Projects\Golf_Website\Golf_Website\obj\Debug\Golf_Website.csproj.GenerateResource.Cache
+C:\Users\Lauren\Documents\Visual Studio 2015\Projects\Golf_Website\Golf_Website\obj\Debug\Golf_Website.Migrations.User1.resources
+C:\Users\Lauren\Documents\Visual Studio 2015\Projects\Golf_Website\Golf_Website\obj\Debug\Golf_Website.Migrations.User2.resources
+C:\Users\Lauren\Documents\Visual Studio 2015\Projects\Golf_Website\Golf_Website\obj\Debug\Golf_Website.Migrations.User3.resources
+C:\Users\Lauren\Documents\Visual Studio 2015\Projects\Golf_Website\Golf_Website\obj\Debug\Golf_Website.Migrations.User4.resources
+C:\Users\Lauren\Documents\Visual Studio 2015\Projects\Golf_Website\Golf_Website\obj\Debug\Golf_Website.Migrations.WithPic.resources
+C:\Users\Lauren\Documents\Visual Studio 2015\Projects\Golf_Website\Golf_Website\obj\Debug\Golf_Website.Migrations.profile.resources
+C:\Users\Lauren\Documents\Visual Studio 2015\Projects\Golf_Website\Golf_Website\obj\Debug\Golf_Website.Migrations.newTees.resources
+C:\Users\Lauren\Documents\Visual Studio 2015\Projects\Golf_Website\Golf_Website\obj\Debug\Golf_Website.Migrations.newTees1.resources
+C:\Users\Lauren\Documents\Visual Studio 2015\Projects\Golf_Website\Golf_Website\obj\Debug\Golf_Website.Migrations.newTees2.resources
+C:\Users\Lauren\Documents\Visual Studio 2015\Projects\Golf_Website\Golf_Website\obj\Debug\Golf_Website.Migrations.Cart.resources
+C:\Users\Lauren\Documents\Visual Studio 2015\Projects\Golf_Website\Golf_Website\obj\Debug\Golf_Website.Migrations.Cart1.resources
+C:\Users\Lauren\Documents\Visual Studio 2015\Projects\Golf_Website\Golf_Website\obj\Debug\Golf_Website.Migrations.ItemCount.resources
+C:\Users\Lauren\Documents\Visual Studio 2015\Projects\Golf_Website\Golf_Website\obj\Debug\Golf_Website.Migrations.sc.resources
+C:\Users\Lauren\Documents\Visual Studio 2015\Projects\Golf_Website\Golf_Website\obj\Debug\Golf_Website.Migrations.sc1.resources
+C:\Users\Lauren\Documents\Visual Studio 2015\Projects\Golf_Website\Golf_Website\obj\Debug\Golf_Website.Migrations.scoreDate.resources
+C:\Users\Lauren\Documents\Visual Studio 2015\Projects\Golf_Website\Golf_Website\obj\Debug\Golf_Website.Migrations.scoreDate1.resources
+C:\Users\Lauren\Documents\Visual Studio 2015\Projects\Golf_Website\Golf_Website\obj\Debug\Golf_Website.Migrations.scoreDate2.resources
+C:\Users\Lauren\Documents\Visual Studio 2015\Projects\Golf_Website\Golf_Website\obj\Debug\Golf_Website.Migrations.score.resources
+C:\Users\Lauren\Documents\Visual Studio 2015\Projects\Golf_Website\Golf_Website\obj\Debug\Golf_Website.Migrations.score1.resources
+C:\Users\Lauren\Documents\Visual Studio 2015\Projects\Golf_Website\Golf_Website\bin\SendGrid.dll
+C:\Users\Lauren\Documents\Visual Studio 2015\Projects\Golf_Website\Golf_Website\bin\SendGrid.SmtpApi.dll
+C:\Users\Lauren\Documents\Visual Studio 2015\Projects\Golf_Website\Golf_Website\bin\SendGridMail.dll
+C:\Users\Lauren\Documents\Visual Studio 2015\Projects\Golf_Website\Golf_Website\obj\Debug\Golf_Website.Migrations.emailconf.resources
+C:\Users\Lauren\Documents\Visual Studio 2015\Projects\Golf_Website\Golf_Website\obj\Debug\Golf_Website.Migrations.emailconf1.resources
+C:\Users\Lauren\Documents\Visual Studio 2015\Projects\Golf_Website\Golf_Website\obj\Debug\Golf_Website.Migrations.claims.resources
+C:\Users\Lauren\Documents\Visual Studio 2015\Projects\Golf_Website\Golf_Website\obj\Debug\Golf_Website.Migrations.Claim.resources
+C:\Users\Lauren\Documents\Visual Studio 2015\Projects\Golf_Website\Golf_Website\obj\Debug\Golf_Website.Migrations.friends.resources
+C:\Users\Lauren\Documents\Visual Studio 2015\Projects\Golf_Website\Golf_Website\obj\Debug\Golf_Website.Migrations.friends1.resources
+C:\Users\Lauren\Documents\Visual Studio 2015\Projects\Golf_Website\Golf_Website\obj\Debug\Golf_Website.Migrations.handicapAdj.resources
+C:\Users\Lauren\Documents\Visual Studio 2015\Projects\Golf_Website\Golf_Website\obj\Debug\Golf_Website.Migrations.profileId.resources
+E:\Projects\Golf_Website\Golf_Website\bin\roslyn\csc.exe
+E:\Projects\Golf_Website\Golf_Website\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\Projects\Golf_Website\Golf_Website\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\Projects\Golf_Website\Golf_Website\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\Projects\Golf_Website\Golf_Website\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\Projects\Golf_Website\Golf_Website\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\Projects\Golf_Website\Golf_Website\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\Projects\Golf_Website\Golf_Website\bin\roslyn\System.Collections.Immutable.dll
+E:\Projects\Golf_Website\Golf_Website\bin\roslyn\System.Reflection.Metadata.dll
+E:\Projects\Golf_Website\Golf_Website\bin\roslyn\vbc.exe
+E:\Projects\Golf_Website\Golf_Website\bin\roslyn\VBCSCompiler.exe
+E:\Projects\Golf_Website\Golf_Website\bin\roslyn\VBCSCompiler.exe.config
+E:\Projects\Golf_Website\Golf_Website\bin\CoderCamps-SPA.dll.config
+E:\Projects\Golf_Website\Golf_Website\bin\CoderCamps-SPA.dll
+E:\Projects\Golf_Website\Golf_Website\bin\CoderCamps-SPA.pdb
+E:\Projects\Golf_Website\Golf_Website\bin\Antlr3.Runtime.dll
+E:\Projects\Golf_Website\Golf_Website\bin\EntityFramework.dll
+E:\Projects\Golf_Website\Golf_Website\bin\EntityFramework.SqlServer.dll
+E:\Projects\Golf_Website\Golf_Website\bin\Microsoft.AspNet.Identity.Core.dll
+E:\Projects\Golf_Website\Golf_Website\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+E:\Projects\Golf_Website\Golf_Website\bin\Microsoft.AspNet.Identity.Owin.dll
+E:\Projects\Golf_Website\Golf_Website\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\Projects\Golf_Website\Golf_Website\bin\Microsoft.Owin.dll
+E:\Projects\Golf_Website\Golf_Website\bin\Microsoft.Owin.Host.SystemWeb.dll
+E:\Projects\Golf_Website\Golf_Website\bin\Microsoft.Owin.Security.Cookies.dll
+E:\Projects\Golf_Website\Golf_Website\bin\Microsoft.Owin.Security.dll
+E:\Projects\Golf_Website\Golf_Website\bin\Microsoft.Owin.Security.Facebook.dll
+E:\Projects\Golf_Website\Golf_Website\bin\Microsoft.Owin.Security.Google.dll
+E:\Projects\Golf_Website\Golf_Website\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+E:\Projects\Golf_Website\Golf_Website\bin\Microsoft.Owin.Security.OAuth.dll
+E:\Projects\Golf_Website\Golf_Website\bin\Microsoft.Owin.Security.Twitter.dll
+E:\Projects\Golf_Website\Golf_Website\bin\Microsoft.Web.Infrastructure.dll
+E:\Projects\Golf_Website\Golf_Website\bin\Newtonsoft.Json.dll
+E:\Projects\Golf_Website\Golf_Website\bin\Ninject.dll
+E:\Projects\Golf_Website\Golf_Website\bin\Ninject.Web.Common.dll
+E:\Projects\Golf_Website\Golf_Website\bin\Ninject.Web.WebApi.dll
+E:\Projects\Golf_Website\Golf_Website\bin\Ninject.Web.WebApi.WebHost.dll
+E:\Projects\Golf_Website\Golf_Website\bin\Owin.dll
+E:\Projects\Golf_Website\Golf_Website\bin\SendGrid.dll
+E:\Projects\Golf_Website\Golf_Website\bin\SendGrid.SmtpApi.dll
+E:\Projects\Golf_Website\Golf_Website\bin\SendGridMail.dll
+E:\Projects\Golf_Website\Golf_Website\bin\System.Net.Http.Formatting.dll
+E:\Projects\Golf_Website\Golf_Website\bin\System.Web.Helpers.dll
+E:\Projects\Golf_Website\Golf_Website\bin\System.Web.Http.dll
+E:\Projects\Golf_Website\Golf_Website\bin\System.Web.Http.Owin.dll
+E:\Projects\Golf_Website\Golf_Website\bin\System.Web.Http.WebHost.dll
+E:\Projects\Golf_Website\Golf_Website\bin\System.Web.Mvc.dll
+E:\Projects\Golf_Website\Golf_Website\bin\System.Web.Optimization.dll
+E:\Projects\Golf_Website\Golf_Website\bin\System.Web.Razor.dll
+E:\Projects\Golf_Website\Golf_Website\bin\System.Web.WebPages.Deployment.dll
+E:\Projects\Golf_Website\Golf_Website\bin\System.Web.WebPages.dll
+E:\Projects\Golf_Website\Golf_Website\bin\System.Web.WebPages.Razor.dll
+E:\Projects\Golf_Website\Golf_Website\bin\WebActivatorEx.dll
+E:\Projects\Golf_Website\Golf_Website\bin\WebGrease.dll
+E:\Projects\Golf_Website\Golf_Website\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\Projects\Golf_Website\Golf_Website\bin\Newtonsoft.Json.xml
+E:\Projects\Golf_Website\Golf_Website\bin\Ninject.xml
+E:\Projects\Golf_Website\Golf_Website\bin\Ninject.Web.Common.xml
+E:\Projects\Golf_Website\Golf_Website\bin\Ninject.Web.WebApi.xml
+E:\Projects\Golf_Website\Golf_Website\bin\Ninject.Web.WebApi.WebHost.xml
+E:\Projects\Golf_Website\Golf_Website\bin\System.Net.Http.Formatting.xml
+E:\Projects\Golf_Website\Golf_Website\bin\System.Web.Helpers.xml
+E:\Projects\Golf_Website\Golf_Website\bin\System.Web.Http.xml
+E:\Projects\Golf_Website\Golf_Website\bin\System.Web.Http.WebHost.xml
+E:\Projects\Golf_Website\Golf_Website\bin\System.Web.Mvc.xml
+E:\Projects\Golf_Website\Golf_Website\bin\System.Web.Optimization.xml
+E:\Projects\Golf_Website\Golf_Website\bin\System.Web.Razor.xml
+E:\Projects\Golf_Website\Golf_Website\bin\System.Web.WebPages.xml
+E:\Projects\Golf_Website\Golf_Website\bin\System.Web.WebPages.Deployment.xml
+E:\Projects\Golf_Website\Golf_Website\bin\System.Web.WebPages.Razor.xml
+E:\Projects\Golf_Website\Golf_Website\bin\Antlr3.Runtime.pdb
+E:\Projects\Golf_Website\Golf_Website\bin\EntityFramework.xml
+E:\Projects\Golf_Website\Golf_Website\bin\EntityFramework.SqlServer.xml
+E:\Projects\Golf_Website\Golf_Website\bin\Microsoft.AspNet.Identity.Core.xml
+E:\Projects\Golf_Website\Golf_Website\bin\Microsoft.AspNet.Identity.Owin.xml
+E:\Projects\Golf_Website\Golf_Website\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+E:\Projects\Golf_Website\Golf_Website\bin\Microsoft.Owin.xml
+E:\Projects\Golf_Website\Golf_Website\bin\Microsoft.Owin.Host.SystemWeb.xml
+E:\Projects\Golf_Website\Golf_Website\bin\Microsoft.Owin.Security.xml
+E:\Projects\Golf_Website\Golf_Website\bin\Microsoft.Owin.Security.Facebook.xml
+E:\Projects\Golf_Website\Golf_Website\bin\Microsoft.Owin.Security.Cookies.xml
+E:\Projects\Golf_Website\Golf_Website\bin\Microsoft.Owin.Security.OAuth.xml
+E:\Projects\Golf_Website\Golf_Website\bin\Microsoft.Owin.Security.Google.xml
+E:\Projects\Golf_Website\Golf_Website\bin\Microsoft.Owin.Security.Twitter.xml
+E:\Projects\Golf_Website\Golf_Website\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+E:\Projects\Golf_Website\Golf_Website\bin\System.Web.Http.Owin.xml
+E:\Projects\Golf_Website\Golf_Website\obj\Debug\Golf_Website.csprojResolveAssemblyReference.cache
+E:\Projects\Golf_Website\Golf_Website\obj\Debug\Golf_Website.Migrations.User.resources
+E:\Projects\Golf_Website\Golf_Website\obj\Debug\Golf_Website.Migrations.User1.resources
+E:\Projects\Golf_Website\Golf_Website\obj\Debug\Golf_Website.Migrations.User2.resources
+E:\Projects\Golf_Website\Golf_Website\obj\Debug\Golf_Website.Migrations.User3.resources
+E:\Projects\Golf_Website\Golf_Website\obj\Debug\Golf_Website.Migrations.User4.resources
+E:\Projects\Golf_Website\Golf_Website\obj\Debug\Golf_Website.Migrations.WithPic.resources
+E:\Projects\Golf_Website\Golf_Website\obj\Debug\Golf_Website.Migrations.profile.resources
+E:\Projects\Golf_Website\Golf_Website\obj\Debug\Golf_Website.Migrations.newTees.resources
+E:\Projects\Golf_Website\Golf_Website\obj\Debug\Golf_Website.Migrations.newTees1.resources
+E:\Projects\Golf_Website\Golf_Website\obj\Debug\Golf_Website.Migrations.newTees2.resources
+E:\Projects\Golf_Website\Golf_Website\obj\Debug\Golf_Website.Migrations.Cart.resources
+E:\Projects\Golf_Website\Golf_Website\obj\Debug\Golf_Website.Migrations.Cart1.resources
+E:\Projects\Golf_Website\Golf_Website\obj\Debug\Golf_Website.Migrations.ItemCount.resources
+E:\Projects\Golf_Website\Golf_Website\obj\Debug\Golf_Website.Migrations.sc.resources
+E:\Projects\Golf_Website\Golf_Website\obj\Debug\Golf_Website.Migrations.sc1.resources
+E:\Projects\Golf_Website\Golf_Website\obj\Debug\Golf_Website.Migrations.scoreDate.resources
+E:\Projects\Golf_Website\Golf_Website\obj\Debug\Golf_Website.Migrations.scoreDate1.resources
+E:\Projects\Golf_Website\Golf_Website\obj\Debug\Golf_Website.Migrations.scoreDate2.resources
+E:\Projects\Golf_Website\Golf_Website\obj\Debug\Golf_Website.Migrations.score.resources
+E:\Projects\Golf_Website\Golf_Website\obj\Debug\Golf_Website.Migrations.score1.resources
+E:\Projects\Golf_Website\Golf_Website\obj\Debug\Golf_Website.Migrations.emailconf.resources
+E:\Projects\Golf_Website\Golf_Website\obj\Debug\Golf_Website.Migrations.emailconf1.resources
+E:\Projects\Golf_Website\Golf_Website\obj\Debug\Golf_Website.Migrations.claims.resources
+E:\Projects\Golf_Website\Golf_Website\obj\Debug\Golf_Website.Migrations.Claim.resources
+E:\Projects\Golf_Website\Golf_Website\obj\Debug\Golf_Website.Migrations.friends.resources
+E:\Projects\Golf_Website\Golf_Website\obj\Debug\Golf_Website.Migrations.friends1.resources
+E:\Projects\Golf_Website\Golf_Website\obj\Debug\Golf_Website.Migrations.handicapAdj.resources
+E:\Projects\Golf_Website\Golf_Website\obj\Debug\Golf_Website.Migrations.profileId.resources
+E:\Projects\Golf_Website\Golf_Website\obj\Debug\Golf_Website.csproj.GenerateResource.Cache
+E:\Projects\Golf_Website\Golf_Website\obj\Debug\CoderCamps-SPA.dll
+E:\Projects\Golf_Website\Golf_Website\obj\Debug\CoderCamps-SPA.pdb

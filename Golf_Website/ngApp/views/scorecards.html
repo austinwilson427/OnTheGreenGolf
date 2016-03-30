@@ -1,0 +1,305 @@
+﻿<div class="scorecard_contain">
+    <div ng-show="vm.showAddScorecard" class="add_course">
+        <div class="row">
+            <div class="col-md-4 col-md-offset-4 form-group">
+                <button ng-click="vm.addScoreDetailsModal()" class="btn btn-primary form-control">Add New Scorecard</button>
+            </div>
+        </div>
+    </div>
+    <div class="select_date">
+        <div class="row">
+            <div class="col-md-2 col-md-offset-5 form-group">
+                <label>Select Card</label>
+                <select class="form-control" ng-change="vm.showScores()" ng-model="vm.scoreDateSelected">
+                    <option ng-repeat="score in vm.myScorecards track by $index" value="{{score.scoreDate}}">{{score.scoreDate | date: 'MM/dd/yyyy'}} &nbsp; &nbsp; &nbsp; {{$index + 1}}</option>
+                </select>
+            </div>
+        </div>
+    </div>
+    <div ng-show="vm.showScore" class="scorecards_wrap">
+        <table class="scorecard" ng-repeat="score in vm.myScorecards | filter: vm.scoreDateSelected">
+            <tr class="course_details">
+                <th colspan="10">{{score.courseInfo.courseName}} - {{score.courseInfo.city}}, {{score.courseInfo.state}}</th>
+            </tr>
+            <tr ng-if="score.myDifficulty == 'Championship'" class="course_details">
+                <td>Championship:</td>
+                <td colspan="2">Par: {{score.courseInfo.champPar}}</td>
+                <td colspan="2">Rating: {{score.courseInfo.champRating}}</td>
+                <td colspan="2">Slope: {{score.courseInfo.champSlope}}</td>
+                <td colspan="2">Yardage: {{score.courseInfo.champYardage}}</td>
+            </tr>
+            <tr ng-if="score.myDifficulty == 'Tournament'" class="course_details">
+                <td>Tournament:</td>
+                <td colspan="2">Par: {{score.courseInfo.tournPar}}</td>
+                <td colspan="2">Rating: {{score.courseInfo.tournRating}}</td>
+                <td colspan="2">Slope: {{score.courseInfo.tournSlope}}</td>
+                <td colspan="2">Yardage: {{score.courseInfo.tournYardage}}</td>
+            </tr>
+            <tr ng-if="score.myDifficulty == 'Members'" class="course_details">
+                <td>Members:</td>
+                <td colspan="2">Par: {{score.courseInfo.membPar}}</td>
+                <td colspan="2">Rating: {{score.courseInfo.membRating}}</td>
+                <td colspan="2">Slope: {{score.courseInfo.membSlope}}</td>
+                <td colspan="2">Yardage: {{score.courseInfo.membYardage}}</td>
+            </tr>
+            <tr ng-if="score.myDifficulty == 'Ladies'" class="course_details">
+                <td>Ladies:</td>
+                <td colspan="2">Par: {{score.courseInfo.ladyPar}}</td>
+                <td colspan="2">Rating: {{score.courseInfo.ladyRating}}</td>
+                <td colspan="2">Slope: {{score.courseInfo.ladySlope}}</td>
+                <td colspan="2">Yardage: {{score.courseInfo.ladyYardage}}</td>
+            </tr>
+            <tr></tr>
+            <tr class="green">
+                <th>Holes</th>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+                <td>5</td>
+                <td>6</td>
+                <td>7</td>
+                <td>8</td>
+                <td>9</td>
+            </tr>
+            <tr class="brown">
+                <th>Championship</th>
+                <td>{{score.yardsA1}}</td>
+                <td>{{score.yardsA2}}</td>
+                <td>{{score.yardsA3}}</td>
+                <td>{{score.yardsA4}}</td>
+                <td>{{score.yardsA5}}</td>
+                <td>{{score.yardsA6}}</td>
+                <td>{{score.yardsA7}}</td>
+                <td>{{score.yardsA8}}</td>
+                <td>{{score.yardsA9}}</td>
+            </tr>
+            <tr class="gold">
+                <th>Tournament</th>
+                <td>{{score.yardsB1}}</td>
+                <td>{{score.yardsB2}}</td>
+                <td>{{score.yardsB3}}</td>
+                <td>{{score.yardsB4}}</td>
+                <td>{{score.yardsB5}}</td>
+                <td>{{score.yardsB6}}</td>
+                <td>{{score.yardsB7}}</td>
+                <td>{{score.yardsB8}}</td>
+                <td>{{score.yardsB9}}</td>
+            </tr>
+            <tr class="light_gold">
+                <th>Members</th>
+                <td>{{score.yardsC1}}</td>
+                <td>{{score.yardsC2}}</td>
+                <td>{{score.yardsC3}}</td>
+                <td>{{score.yardsC4}}</td>
+                <td>{{score.yardsC5}}</td>
+                <td>{{score.yardsC6}}</td>
+                <td>{{score.yardsC7}}</td>
+                <td>{{score.yardsC8}}</td>
+                <td>{{score.yardsC9}}</td>
+            </tr>
+            <tr class="red">
+                <th>Ladies</th>
+                <td>{{score.yardsD1}}</td>
+                <td>{{score.yardsD2}}</td>
+                <td>{{score.yardsD3}}</td>
+                <td>{{score.yardsD4}}</td>
+                <td>{{score.yardsD5}}</td>
+                <td>{{score.yardsD6}}</td>
+                <td>{{score.yardsD7}}</td>
+                <td>{{score.yardsD8}}</td>
+                <td>{{score.yardsD9}}</td>
+            </tr>
+            <tr class="myGreen">
+                <th>Par</th>
+                <td>{{score.par1}}</td>
+                <td>{{score.par2}}</td>
+                <td>{{score.par3}}</td>
+                <td>{{score.par4}}</td>
+                <td>{{score.par5}}</td>
+                <td>{{score.par6}}</td>
+                <td>{{score.par7}}</td>
+                <td>{{score.par8}}</td>
+                <td>{{score.par9}}</td>
+            </tr>
+            <tr ng-show="vm.saveDisplay">
+                <th>
+                    <select ng-model="score.myDifficulty">
+                        <option>Championship</option>
+                        <option>Tournament</option>
+                        <option>Members</option>
+                        <option>Ladies</option>
+                    </select>
+                </th>
+                <td><input class="score" type="number" ng-model="score.myScore1" /></td>
+                <td><input class="score" type="number" ng-model="score.myScore2" /></td>
+                <td><input class="score" type="number" ng-model="score.myScore3" /></td>
+                <td><input class="score" type="number" ng-model="score.myScore4" /></td>
+                <td><input class="score" type="number" ng-model="score.myScore5" /></td>
+                <td><input class="score" type="number" ng-model="score.myScore6" /></td>
+                <td><input class="score" type="number" ng-model="score.myScore7" /></td>
+                <td><input class="score" type="number" ng-model="score.myScore8" /></td>
+                <td><input class="score" type="number" ng-model="score.myScore9" /></td>
+                <td ng-hide="true"><input class="score" type="number" value="score.myScore1 + score.myScore2 + score.myScore3 + score.myScore4 + score.myScore5 + score.myScore6 + score.myScore7 + score.myScore8 + score.myScore9" /></td>
+            </tr>
+            <tr ng-show="!vm.saveDisplay">
+                <th>{{score.myDifficulty}}</th>
+                <td>{{score.myScore1}}</td>
+                <td>{{score.myScore2}}</td>
+                <td>{{score.myScore3}}</td>
+                <td>{{score.myScore4}}</td>
+                <td>{{score.myScore5}}</td>
+                <td>{{score.myScore6}}</td>
+                <td>{{score.myScore7}}</td>
+                <td>{{score.myScore8}}</td>
+                <td>{{score.myScore9}}</td>
+            </tr>
+            <tr class="hc_color">
+                <th>Handicap</th>
+                <td>{{score.handiCap1}}</td>
+                <td>{{score.handiCap2}}</td>
+                <td>{{score.handiCap3}}</td>
+                <td>{{score.handiCap4}}</td>
+                <td>{{score.handiCap5}}</td>
+                <td>{{score.handiCap6}}</td>
+                <td>{{score.handiCap7}}</td>
+                <td>{{score.handiCap8}}</td>
+                <td>{{score.handiCap9}}</td>
+            </tr>
+            <tr>
+                <th colspan="10">
+                    Total: {{score.myScore1 + score.myScore2 + score.myScore3 + score.myScore4 + score.myScore5 + score.myScore6 + score.myScore7 + score.myScore8 + score.myScore9}}
+                </th>
+            </tr>
+        </table>
+        <table class="scorecard" ng-repeat="score in vm.myScorecards | filter: vm.scoreDateSelected">
+            <tr class="green">
+                <th>Holes</th>
+                <td>10</td>
+                <td>11</td>
+                <td>12</td>
+                <td>13</td>
+                <td>14</td>
+                <td>15</td>
+                <td>16</td>
+                <td>17</td>
+                <td>18</td>
+            </tr>
+            <tr class="brown">
+                <th>Championship</th>
+                <td>{{score.yardsA10}}</td>
+                <td>{{score.yardsA11}}</td>
+                <td>{{score.yardsA12}}</td>
+                <td>{{score.yardsA13}}</td>
+                <td>{{score.yardsA14}}</td>
+                <td>{{score.yardsA15}}</td>
+                <td>{{score.yardsA16}}</td>
+                <td>{{score.yardsA17}}</td>
+                <td>{{score.yardsA18}}</td>
+            </tr>
+            <tr class="gold">
+                <th>Tournament</th>
+                <td>{{score.yardsB10}}</td>
+                <td>{{score.yardsB11}}</td>
+                <td>{{score.yardsB12}}</td>
+                <td>{{score.yardsB13}}</td>
+                <td>{{score.yardsB14}}</td>
+                <td>{{score.yardsB15}}</td>
+                <td>{{score.yardsB16}}</td>
+                <td>{{score.yardsB17}}</td>
+                <td>{{score.yardsB18}}</td>
+            </tr>
+            <tr class="light_gold">
+                <th>Members</th>
+                <td>{{score.yardsC10}}</td>
+                <td>{{score.yardsC11}}</td>
+                <td>{{score.yardsC12}}</td>
+                <td>{{score.yardsC13}}</td>
+                <td>{{score.yardsC14}}</td>
+                <td>{{score.yardsC15}}</td>
+                <td>{{score.yardsC16}}</td>
+                <td>{{score.yardsC17}}</td>
+                <td>{{score.yardsC18}}</td>
+            </tr>
+            <tr class="red">
+                <th>Ladies</th>
+                <td>{{score.yardsD10}}</td>
+                <td>{{score.yardsD11}}</td>
+                <td>{{score.yardsD12}}</td>
+                <td>{{score.yardsD13}}</td>
+                <td>{{score.yardsD14}}</td>
+                <td>{{score.yardsD15}}</td>
+                <td>{{score.yardsD16}}</td>
+                <td>{{score.yardsD17}}</td>
+                <td>{{score.yardsD18}}</td>
+            </tr>
+            <tr class="myGreen">
+                <th>Par</th>
+                <td>{{score.par10}}</td>
+                <td>{{score.par11}}</td>
+                <td>{{score.par12}}</td>
+                <td>{{score.par13}}</td>
+                <td>{{score.par14}}</td>
+                <td>{{score.par15}}</td>
+                <td>{{score.par16}}</td>
+                <td>{{score.par17}}</td>
+                <td>{{score.par18}}</td>
+            </tr>
+            <tr ng-show="vm.saveDisplay">
+                <th>{{score.myDifficulty}}</th>
+                <td><input class="score" type="number" ng-model="score.myScore10" /></td>
+                <td><input class="score" type="number" ng-model="score.myScore11" /></td>
+                <td><input class="score" type="number" ng-model="score.myScore12" /></td>
+                <td><input class="score" type="number" ng-model="score.myScore13" /></td>
+                <td><input class="score" type="number" ng-model="score.myScore14" /></td>
+                <td><input class="score" type="number" ng-model="score.myScore15" /></td>
+                <td><input class="score" type="number" ng-model="score.myScore16" /></td>
+                <td><input class="score" type="number" ng-model="score.myScore17" /></td>
+                <td><input class="score" type="number" ng-model="score.myScore18" /></td>
+                <td ng-hide="true"><input class="score" type="number" value="score.myScore10 + score.myScore11 + score.myScore12 + score.myScore13 + score.myScore14 + score.myScore15 + score.myScore16 + score.myScore17 + score.myScore18" /></td>
+            </tr>
+            <tr ng-show="!vm.saveDisplay">
+                <th>{{score.myDifficulty}}</th>
+                <td>{{score.myScore10}}</td>
+                <td>{{score.myScore11}}</td>
+                <td>{{score.myScore12}}</td>
+                <td>{{score.myScore13}}</td>
+                <td>{{score.myScore14}}</td>
+                <td>{{score.myScore15}}</td>
+                <td>{{score.myScore16}}</td>
+                <td>{{score.myScore17}}</td>
+                <td>{{score.myScore18}}</td>
+            </tr>
+            <tr class="hc_color">
+                <th>Handicap</th>
+                <td>{{score.handiCap10}}</td>
+                <td>{{score.handiCap11}}</td>
+                <td>{{score.handiCap12}}</td>
+                <td>{{score.handiCap13}}</td>
+                <td>{{score.handiCap14}}</td>
+                <td>{{score.handiCap15}}</td>
+                <td>{{score.handiCap16}}</td>
+                <td>{{score.handiCap17}}</td>
+                <td>{{score.handiCap18}}</td>
+
+            </tr>
+            <tr>
+                <th colspan="10">
+                    Total: {{score.myScore10 + score.myScore11 + score.myScore12 + score.myScore13 + score.myScore14 + score.myScore15 + score.myScore16 + score.myScore17 + score.myScore18}}
+                </th>
+            </tr>
+            <tr>
+                <td colspan="10">Handicap for card: {{score.handicapAdj | number: 1}}</td>
+            </tr>
+            <tr>
+                <td class="update" colspan="5">
+                    <button ng-show="!vm.saveDisplay" class="btn btn-primary" ng-click="vm.showSaveFeatures()">Update</button>
+                    <button ng-show="vm.saveDisplay" class="btn btn-success" ng-click="vm.updateScorecard(score)">Save</button>
+                </td>
+                <td class="delete" colspan="5">
+                    <button ng-show="!vm.saveDisplay" class="btn btn-success" ng-click="vm.deleteScorecard(score.id)">Delete</button>
+                </td>
+            </tr>
+        </table>
+    </div>
+</div>

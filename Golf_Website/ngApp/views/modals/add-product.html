@@ -1,0 +1,37 @@
+﻿<div class="modal-header">
+    <h1>Add New Product</h1>
+</div>
+<div class="modal-body">
+    <form class="form-group" ng-submit="vm.saveProduct(vm.productDetails)">
+        <div >
+            <label>Product Id:</label>
+            <input class="form-control" type="text" ng-model="vm.productDetails.prodId" />
+        </div>
+            <label>Product Category:</label>
+            <select class="form-control" ng-model="vm.productDetails.category">
+                <option>Drivers</option>
+                <option>Woods</option>
+                <option>Hybrids</option>
+                <option>Iron Sets</option>
+                <option>Putters</option>
+                <option>Golf Balls</option>
+                <option>Golf Shirts</option>
+                <option>Golf Shoes</option>
+            </select>
+            <label>Make</label>
+            <input class="form-control" type="text" ng-model="vm.productDetails.make" />
+            <label>File Name</label>
+            <input class="form-control" type="text" ng-model="vm.productDetails.fileName" />
+            <label>Type:</label>
+            <input class="form-control" type="text" ng-model="vm.productDetails.type" />
+            <label>Short Desc</label>
+            <input class="form-control" type="text" ng-model="vm.productDetails.shortDesc" />
+            <label>Price</label>
+            <input class="form-control" type="text" ng-model="vm.productDetails.price" />
+        <br />
+            <input class="form-control btn btn-primary" type="submit" value="Save" />
+        <br />
+            <a href="#" class="form-control btn btn-danger margin_top" ng-click="vm.closeModal()">Cancel</a>
+    </form>
+</div>
+

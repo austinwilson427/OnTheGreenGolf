@@ -1,0 +1,62 @@
+﻿<div class="modal-header">
+    <h1>Order Summary</h1>
+</div>
+<div class="modal-body">
+    <table class="table table-hover">
+        <tr>
+            <th>Quantity</th>
+            <th>Item Name</th>
+            <th>Item Total</th>
+        </tr>
+        <tr ng-repeat="order in vm.data">
+            <td>{{order.itemQuantity}}</td>
+            <td>{{order.itemName}}</td>
+            <td>{{order.itemTotal | currency}}</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <th>{{vm.cost | currency}}</th>
+        </tr>
+    </table>
+</div>
+<form ng-submit="vm.submitOrder()" class="form-group">
+    <div class="modal-body">
+        <div class="row">
+            <div class="col-md-6">
+                <label>Card Type</label>
+                <select class="form-control">
+                    <option>Visa</option>
+                    <option>Mastercard</option>
+                    <option>American Express</option>
+                    <option>Discover</option>
+                </select>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <input class="form-control" type="text" placeholder="Name on Credit Card" />
+            </div>
+            <div class="col-md-6">
+                <input class="form-control" type="text" placeholder="Billing Zip Code" />
+            </div>
+            
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <input class="form-control" type="text" placeholder="Credit Card Number" />
+            </div>
+            <div class="col-md-3">
+                <input class="form-control" type="text" placeholder="MM/YY" />
+            </div>
+            <div class="col-md-3">
+                <input class="form-control" type="text" placeholder="CCV" />
+            </div>
+        </div>
+    </div>
+    <div class="modal-footer">
+        <div class="row form-group">
+            <button type="submit" class="form-control btn btn-primary">Submit Order</button>
+        </div>
+    </div>
+</form>
